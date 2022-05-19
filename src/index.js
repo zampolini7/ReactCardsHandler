@@ -1,20 +1,32 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import { CardProvider } from './components/CardContext';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { CardProvider } from "./CardContext";
+// import { initializeApp } from "firebase/app";
+// import { getAnalytics } from "firebase/analytics";
+// import { firebaseConfig } from "../src/firebase/firebase-config";
+// import { FirebaseAppProvider } from "reactfire";
+import { Provider } from "react-redux";
+import store from "./redux/store";
+// const app = initializeApp(firebaseConfig);
+// const analytics = getAnalytics(app);
+
+
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <CardProvider>
-      <App />
-    </CardProvider>
+    {/* <FirebaseAppProvider firebaseConfig={app}> */}
+    <Provider store={store}>
+      <CardProvider>
+        <App />
+      </CardProvider>
+    </Provider>
+    {/* </FirebaseAppProvider> */}
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

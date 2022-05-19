@@ -1,18 +1,24 @@
-import React from 'react';
+import React from "react";
 
+const ButtonRemove = ({
+  deleteFunction,
+  id,
+  userIdLogued,
+  showComponentDeleteOrCard,
+}) => {
+  const data = { id, userIdLogued };
+  return (
+    <button
+      id={id}
+      onClick={(e) => {
+        console.log(e.target.value);
+        deleteFunction(data);
+        showComponentDeleteOrCard();
+      }}
+    >
+      SI
+    </button>
+  );
+};
 
-
-const ButtonRemove =  ({deleteFunction, id, showComponentDeleteOrCard }) =>{
-  
-    
-    return(
-        <button id={id} onClick={(e)=> {
-            deleteFunction(e)
-            showComponentDeleteOrCard()
-        }} >
-            SI
-        </button>
-    )
-}
-
-export { ButtonRemove }
+export { ButtonRemove };

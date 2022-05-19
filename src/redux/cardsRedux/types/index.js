@@ -1,0 +1,13 @@
+export const SAVE_CARDS = "SAVE_CARDS";
+export const GET_CARDS = "GET_CARDS";
+export const NO_CARDS = "NO_CARDS";
+export const GET_CARDS_SUCCESFUL = "GET_CARDS_SUCCESFUL";
+export const GET_CARDS_ERROR = "GET_CARDS_ERROR";
+export const SAVE_CARDS_SUCCESFUL = "SAVE_CARDS_SUCCESFUL";
+export const SAVE_CARDS_ERROR = "SAVE_CARDS_ERROR";
+export const DELETE_CARDS = "DELETE_CARDS";
+export const DELETE_CARDS_ERROR = "DELETE_CARDS_ERROR";
+export const DELETE_CARDS_SUCCESFUL = "DELETE_CARDS_SUCCESFUL";
+
+// case NO_CARDS:
+//       return initialState;

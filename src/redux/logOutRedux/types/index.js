@@ -1,0 +1,4 @@
+export const FETCH_LOG_OUT = "FETCH_LOG_OUT";
+export const LOG_OUT_SUCCESFUL = "LOG_OUT_SUCCESFUL";
+export const LOG_OUT_ERROR = "LOG_OUT_ERROR";
+export const LOG_OUT_LOADING = "LOG_OUT_LOADING";

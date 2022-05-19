@@ -1,0 +1,67 @@
+.container-login {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  background-color: #e5e5e5;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container-login-card {
+  display: flex;
+  width: 35vw;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fca311;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  /* color: #fff; */
+}
+
+.h2-login-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  max-width: 30vw;
+  text-align: center;
+}
+
+.form-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.label-card {
+  margin: 10px;
+  font-size: 20px;
+}
+
+.input-card {
+  width: 200px;
+  height: 20px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 10px;
+  color: #000000;
+  font-size: 16px;
+}
+
+.button-card {
+  margin-top: 25px;
+  width: 110px;
+  height: 35px;
+  border: 2px solid #e5e5e5;
+  border-radius: 10px;
+  background-color: #e5e5e5;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+}
